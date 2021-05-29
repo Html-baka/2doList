@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', 'Trebuchet MS',  Arial, sans-serif;
+}
+
+body {
+  background: url("./img/cool-background.png") no-repeat ;
+  background-size: cover;
+  height: 100vh;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 400px;
+  max-height: fit-content;
+  background: linear-gradient( 
+306deg
+, rgb(44 125 245) 20%, rgb(229 206 243) 90% );
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  scroll-behavior: smooth;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cross-line {
+  text-decoration: line-through;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deleteTask {
+  margin-top: 30px;
+}
+.task-wrappper {
+  cursor: pointer;
+}
+.task-wrappper > div {
+  font-size: 18px;
+}
+.mdc-text-field--filled {
+  height: 37px;
+}
+.form {
+  padding-top: 10px;
+}
+.add-task {
+  margin-left: 10px;
+}
+.header {
+  margin-bottom: 30px;
+}
