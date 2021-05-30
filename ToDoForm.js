@@ -4,7 +4,6 @@ const ToDoForm = (props) => {
    const [ userInput, setUserInput ] = useState("");
    const handleChange = (e) => {
       setUserInput(e.currentTarget.value)
-      // console.log(e.currentTarget.value);
    }
    const handleSubmit = (e) => {
       e.preventDefault();

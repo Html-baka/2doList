@@ -7,9 +7,12 @@
 }
 
 body {
-  background: url("./img/cool-background.png") no-repeat ;
+  /* background: url("./img/cool-background.png") no-repeat ; */
   background-size: cover;
   height: 100vh;
+  background: linear-gradient( 
+  306deg
+, rgb(44 125 245) 20%, rgb(229 206 243) 90% );
 }
 .App {
   display: flex;
@@ -18,14 +21,14 @@ body {
   width: 520px;
   min-height: 400px;
   max-height: fit-content;
-  background: linear-gradient( 
-306deg
-, rgb(44 125 245) 20%, rgb(229 206 243) 90% );
+  background-color: #0f1d3a;
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
   scroll-behavior: smooth;
+  color: aliceblue;
+  padding-top: 30px;
 }
 
 .App-logo {
@@ -76,9 +79,14 @@ body {
 }
 .task-wrappper {
   cursor: pointer;
+  word-break: break-all;
+  display: flex;
 }
 .task-wrappper > div {
   font-size: 18px;
+}
+.todo-el {
+  width: 300px;
 }
 .mdc-text-field--filled {
   height: 37px;
@@ -91,4 +99,13 @@ body {
 }
 .header {
   margin-bottom: 30px;
+}
+.todo-wrapper {
+  display: flex;
+}
+.editInput {
+  display: none;
+}
+.editInput__active{
+  display: inline-block;
 }
