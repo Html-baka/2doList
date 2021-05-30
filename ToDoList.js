@@ -6,9 +6,7 @@ const ToDoList = (props) => {
       <div>
       <div className="wrapper">
          {props.toDoList.map(el  => (
-            <div key={el.id} className="todo-wrapper">
-               <ToDo toDoEl={el} toggleCross={props.toggleCross} inputSubmit={props.inputSubmit}/>
-            </div>
+            <ToDo key={el.id} toDoEl={el} toggleCross={props.toggleCross} inputSubmit={props.inputSubmit}/>
          ))}
       </div>
          <button onClick={props.handleClick} className="mdc-button mdc-button--raised deleteTask">

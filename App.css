@@ -73,6 +73,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .deleteTask {
   margin-top: 30px;
@@ -81,12 +82,32 @@ body {
   cursor: pointer;
   word-break: break-all;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .task-wrappper > div {
   font-size: 18px;
+  justify-content: center;
+}
+.edit__btn {
+  position: absolute;
+  right: 70px;
+  padding: 0;
+  font-size: 10px;
+  min-width: 40px;
+  min-height: fit-content;
+  height: 24px;
+  opacity: 0.2;
+}
+.edit__btn:hover {
+  transition: all 0.8s;
+  opacity: 0.9;
 }
 .todo-el {
   width: 300px;
+}
+.todo-el__disabled {
+  display: none;
 }
 .mdc-text-field--filled {
   height: 37px;
