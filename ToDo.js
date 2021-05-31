@@ -5,7 +5,8 @@ const ToDo = (props) => {
    useEffect(()=> {
       setInputState(props.toDoEl.task)
       console.log('effect');
-   })
+   },[props.toDoEl.task])
+   
    const textInput = useRef(null);
    const toDoEl = useRef(null);
    const handleClick = (e) => { //finding the id of clicked item and pass it through props for toggleToDo function

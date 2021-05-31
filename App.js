@@ -1,15 +1,12 @@
 import './App.css';
 import Header from './Header';
-import data from "./data.json";
+import data from "./.mockend.json";
 import React, { useEffect, useState } from 'react';
 import ToDoList from './ToDoList';
 import ToDoForm from './ToDoForm';
 
 function App() {
   const [toDoList, setToDoList] = useState(data);
-  useEffect(()=> {
-    console.log(toDoList);
-  })
   const toggleCross = (id) => {
     let mapped = toDoList.map(task => {
       // eslint-disable-next-line eqeqeq
